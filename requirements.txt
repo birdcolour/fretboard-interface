@@ -1,0 +1,15 @@
+git+git://github.com/birdcolour/python-fretboard@1.1.4
+
+attrdict==2.0.0
+Click==7.0
+Flask==1.0.2
+Flask-WTF==0.14.2
+itsdangerous==1.1.0
+Jinja2==2.10
+MarkupSafe==1.0
+pyparsing==2.2.2
+PyYAML==3.12
+six==1.11.0
+svgwrite==1.1.9
+Werkzeug==0.14.1
+WTForms==2.2.1

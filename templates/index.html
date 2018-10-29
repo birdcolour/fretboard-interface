@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Create chord diagrams</title>
+</head>
+<body>
+
+<div>
+    <div>
+        <form name="diagram" action="" method="post" novalidate>
+            {{ chord_form.hidden_tag() }}
+            {{ chord_form.instrument }}
+            {{ chord_form.positions }}
+            {{ chord_form.fingers }}
+            {{ chord_form.barre }}
+            {{ chord_form.render }}
+        </form>
+    </div>
+    <div>
+        <img src="{{ diagram }}">
+    </div>
+</div>
+
+<!--
+<form>
+    <input type="submit" name='btn' value="Download">
+</form>
+-->
+</body>
+</html>
