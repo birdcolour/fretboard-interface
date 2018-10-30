@@ -8,7 +8,7 @@ itsdangerous==1.1.0
 Jinja2==2.10
 MarkupSafe==1.0
 pyparsing==2.2.2
-PyYAML==3.12
+PyYAML==3.13
 six==1.11.0
 svgwrite==1.1.9
 Werkzeug==0.14.1
