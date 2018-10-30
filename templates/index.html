@@ -10,10 +10,11 @@
     <div>
         <form name="diagram" action="" method="post" novalidate>
             {{ chord_form.hidden_tag() }}
+            Choose an instrument:<br>
             {{ chord_form.instrument }}
-            {{ chord_form.positions }}
-            {{ chord_form.fingers }}
-            {{ chord_form.barre }}
+            Fret positions: {{ chord_form.positions }}<br>
+            Finger numbers: {{ chord_form.fingers }}<br>
+            Override barre fret: {{ chord_form.barre }}<br>
             {{ chord_form.render }}
         </form>
     </div>
