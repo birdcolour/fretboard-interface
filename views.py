@@ -20,11 +20,13 @@ def home():
         diagram = chord_cls(
             positions=chord_form.positions.data,
             fingers=chord_form.fingers.data,
-            barre=chord_form.barre.data
+            barre=chord_form.barre.data,
+            title=chord_form.title.data,
         )
 
         # This is obviously dumb, but works for now
-        filename = 'static/{ins}/{pos}_{fin}_{bar}.svg'.format(
+        filename = 'static/{ins}/{title}_{pos}_{fin}_{bar}.svg'.format(
+            title=chord_form.title.data,
             ins=chord_form.instrument.data,
             pos=chord_form.positions.data,
             fin=chord_form.fingers.data,

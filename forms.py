@@ -8,6 +8,7 @@ class ChordForm(FlaskForm):
         choices=[('ukulele', 'Ukulele'), ('guitar', 'Guitar')],
         default='ukulele'
     )
+    title = StringField(label='Chord title', default=None)
     positions = StringField(label='Positions', default='0000')
     fingers = StringField(label='Fingers', default='----')
     barre = IntegerField(label='Barre override', default=None)
