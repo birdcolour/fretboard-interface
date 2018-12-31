@@ -1,6 +1,6 @@
 from flask import render_template, request, url_for, Blueprint
 
-from fretboard.chord import UkuleleChord, GuitarChord
+from diagram import UkuleleChord, GuitarChord
 
 from forms import ChordForm, DownloadForm
 
